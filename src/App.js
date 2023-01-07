@@ -1,27 +1,16 @@
 import React from "react";
 import "./App.css";
-import AirQuality from "./Components/AirQuality";
-import Temperature from "./Components/Temperature";
-import Audio from "./Components/Audio";
-import Display from "./Components/Display";
-import Lighting from "./Components/Lighting";
-import Logo from "./Components/Logo";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./Components/Home";
 
 function App() {
   return (
     <div className="App">
-      <div className="container px-4 mx-auto overflow-hidden md:px-0">
-        <div className="py-10">
-          <Logo />
-        </div>
-        <div className="flex flex-wrap justify-center -m-3">
-          <AirQuality />
-          <Temperature />
-          <Audio />
-          <Display />
-          <Lighting />
-        </div>
-      </div>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
