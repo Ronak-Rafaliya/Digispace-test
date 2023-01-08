@@ -3,7 +3,7 @@ import Title from "./Title";
 
 const Display = () => {
   return (
-    <div className="w-full p-3 md:w-1/3 lg:w-1/4 xl:w-1/5">
+    <div className="w-full p-3 sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5">
       <div className="flex flex-col justify-between h-full p-4 bg-gray/20 rounded-xl">
         <Title title="Displays" />
         <div className="flex items-start divide-x divide-gray/30">
